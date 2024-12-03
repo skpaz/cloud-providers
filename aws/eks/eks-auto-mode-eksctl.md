@@ -9,12 +9,12 @@
 
 ## Assumptions
 
-- Basic familiarity with AWS.
+- Familiarity with AWS.
 - `eksctl` is [installed](https://eksctl.io/installation/).
 - You have an AWS IAM user account.
-- `eksctl` can access your AWS account credentials via environment variables or `~/.aws/credentials`.
+  - `eksctl` can access your AWS account credentials via environment variables or `~/.aws/credentials`.
 - You have `kubectl` installed.
-- `kubectl` can access your AWS account credentials via environment variables or `~/.aws/credentials`.
+  - `kubectl` can access your AWS account credentials via environment variables or `~/.aws/credentials`.
 
 ## Resources
 
