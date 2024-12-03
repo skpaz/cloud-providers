@@ -81,10 +81,10 @@ You'll see output similar to this:
 2024-12-03 09:11:45 [ℹ]  waiting for CloudFormation stack "eksctl-eks-test-cluster-cluster"
 2024-12-03 09:12:45 [ℹ]  waiting for CloudFormation stack "eksctl-eks-test-cluster-cluster"
 2024-12-03 09:14:46 [ℹ]  waiting for the control plane to become ready
-2024-12-03 09:14:47 [✔]  saved kubeconfig as "/Users/sean/.kube/config"
+2024-12-03 09:14:47 [✔]  saved kubeconfig as "/Users/fakeuser/.kube/config"
 2024-12-03 09:14:47 [ℹ]  no tasks
 2024-12-03 09:14:47 [✔]  all EKS cluster resources for "eks-test-cluster" have been created
-2024-12-03 09:14:47 [ℹ]  kubectl command should work with "/Users/$USER/.kube/config", try 'kubectl get nodes'
+2024-12-03 09:14:47 [ℹ]  kubectl command should work with "/Users/fakeuser/.kube/config", try 'kubectl get nodes'
 2024-12-03 09:14:47 [✔]  EKS cluster "eks-test-cluster" in "us-east-1" region is ready
 ```
 
@@ -123,7 +123,7 @@ eksctl create iamidentitymapping \
   --no-duplicate-arns
 ```
 
-Replace `<CLUSTER_NAME>` with the name of your EKS cluster, `` with the AWS region where the cluster is located, and `` with the ARN of the role you want
+Replace `<CLUSTER_NAME>` with the name of your EKS cluster, `<AWS_REGION>` with the AWS region where the cluster is located, and `<ROLE_ARN>` with the ARN of the role you want
  to grant access to.
 
 Example:
